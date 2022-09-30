@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amenities</title>
+    <script 
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  
+    <link rel="stylesheet" href="static/css/amenities.css" />
+    <script  src="./static/js/amenities.js" defer></script>
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <div class="header">
+          <a href="admin.html"
+            ><box-icon name="arrow-back" color="#0e0e0e"></box-icon
+          ></a>
+
+          <h2>Add Amenities</h2>
+        </div>
+        <form action="" method="post" id="form">
+          <div class="add">
+            <input
+              required
+              type="text"
+              placeholder="add amenities"
+              name="amenity"
+              autocomplete="off"
+              id="amenity"
+            />
+          </div>
+          <button id="submitBtn" type="submit">
+            <box-icon name="plus"></box-icon>
+          </button>
+        </form>
+        <div class="results">
+            
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

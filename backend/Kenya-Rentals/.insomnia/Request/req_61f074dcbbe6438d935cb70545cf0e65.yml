@@ -1,0 +1,58 @@
+_id: req_61f074dcbbe6438d935cb70545cf0e65
+type: Request
+parentId: fld_439f776829ad48b3889e1363abec281d
+modified: 1660469602067
+created: 1660466937358
+url: http://localhost:8090/api/apartment/
+name: CREATE APARTMENT
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "GATAKA HEIGHTS",
+    	"latitudeCoordinates": 11.00,
+    	"longitudeCoordinates": 9.00,
+    	"houseTypes": {
+    		"BEDSITTER": {
+    			"imageUrl": [
+    				""
+    			],
+    			"available": true,
+    			"price": "7000"
+    		},
+    		"ONE_BEDROOM": {
+    			"imageUrl": [
+    				""
+    			],
+    			"available": true,
+    			"price": "10000"
+    		}
+    	},
+    	"imageUrl": [
+    		""
+    	],
+    	"phoneNumber": "089394323",
+    	"email": "gataka@ke.co.ke",
+    	"amenities": [
+    		"Free parking premises",
+    		"Borehole",
+    		"Security"
+    	],
+    	"featured": true
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_da1ca0c2d8a143c6a0f6cb6bc9dd1ee9
+authentication: {}
+metaSortKey: -1660467033577.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

@@ -1,0 +1,21 @@
+_id: req_07c55537ca4f445ebc5e5cab60d0ff0f
+type: Request
+parentId: fld_439f776829ad48b3889e1363abec281d
+modified: 1660469637060
+created: 1660466952331
+url: http://localhost:8090/api/apartment/f9008a4b-ad51-4922-b0cb-7786666c2f7c
+name: FETCH APARTMENT
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1660467033552.625
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

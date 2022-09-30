@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Apartment</title>
+    <link rel="stylesheet" href="./static/css/createApartment.css" />
+    <script src="/static/js/createApartment.js" defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="admin.html">
+        <box-icon style="cursor: pointer" name="arrow-back"></box-icon
+      ></a>
+      <h3 style="color: rebeccapurple">Add an Apartment</h3>
+    </header>
+    <div class="container">
+      <form action="" id="form" method="post">
+        <div class="main">
+          <div class="mini">
+            <label for="">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="apartmentName"
+              required
+            />
+          </div>
+          <div class="mini">
+            <label for="">Get Your Coordinates</label>
+            <button id="coordinates">Click</button>
+          </div>
+          <div class="mini">
+            <label for="">Latitude Coordinates</label>
+            <input type="text" name="lat" id="lat" />
+          </div>
+          <div class="mini">
+            <label for="">Longitude Coordinates</label>
+            <input type="text" name="long" required id="long" />
+          </div>
+          <div class="mini">
+            <label for="">Image for Apartment</label>
+            <input
+              id="apartmentImage"
+              type="file"
+              src=""
+              alt=""
+              multiple
+              accept="image/png, image/jpeg"
+            />
+          </div>
+          <div class="mini">
+            <label for="">Phone Number</label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+          <div class="mini">
+            <label for="">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="mini">
+            <label for="">Town Location</label>
+            <input type="text" id="town" />
+          </div>
+          <div class="mini">
+            <div class="options">
+              <label for=""> <strong> Add which house type:</strong></label>
+              <select name="houses" id="houses">
+                <option value="BEDSITTER">BEDSITTER</option>
+                <option value="ONE_BEDROOM">ONE_BEDROOM</option>
+                <option value="TWO_BEDROOM">TWO_BEDROOM</option>
+                <option value="THREE_BEDROOM">THREE_BEDROOM</option>
+              </select>
+              <div class="houseImage"></div>
+              <div class="available">
+                <label for="">Are they Available?</label>
+                <div class="true">
+                  <label for="">Yes</label>
+                  <input type="radio" name="featured" id="yes" />
+                </div>
+                <div class="no">
+                  <label for="">No</label>
+                  <input type="radio" name="featured" id="no" />
+                </div>
+              </div>
+              <div class="price">
+                <label for="">House Price in Ksh</label>
+                <input type="number" name="" required id="price" />
+              </div>
+
+              <button class="addHouse" id="btnHouse">
+                <box-icon name="plus" class="plus"></box-icon>
+              </button>
+            </div>
+          </div>
+          <div class="mini-extra"></div>
+        </div>
+        <div class="extras">
+          <div class="mini">
+            <label for="">Is the Apartment Featured</label>
+            <div class="featured">
+              <div class="true">
+                <label for="">Yes</label>
+                <input type="radio" value="true" name="featured" id="true" />
+              </div>
+              <div class="true">
+                <label for="">No</label>
+                <input type="radio" name="featured" value="false" id="false" />
+              </div>
+            </div>
+          </div>
+          <div class="mini">
+            <label for=""><strong>Amenities</strong> </label>
+            <div class="checked"></div>
+          </div>
+          <button class="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="toast">
+      <div class="toast-content">
+        <i class="fas fa-solid fa-check check"></i>
+        <div class="message">
+          <span class="text text-1">Success</span>
+          <span class="text text-2">Apartment has been saved</span>
+        </div>
+      </div>
+      <i class="fa-solid fa-xmark close"></i>
+      <div class="progress"></div>
+    </div>
+  </body>
+</html>

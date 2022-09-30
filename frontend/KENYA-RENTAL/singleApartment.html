@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment</title>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+      integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="stylesheet" href="./static/css/singleApartment.css" />
+    <script src="/static/js/getApartment.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">
+
+        <box-icon name='left-arrow-alt'></box-icon>
+      </a>
+    </nav>
+    <main>
+      <div class="image">
+        <img
+          src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGFwYXJ0bWVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="container">
+        <div class="apartment">
+          <div class="profileApartmentInfoWrapper">
+            <div class="column1">
+              <div class="propertyNameRow">
+                <h2>Ndovu Heights Apartment</h2>
+              </div>
+              <div class="propertyAddressRow">
+                <div class="propertyAddressContainer">
+                  <h4>
+                    <span>Gataka Road</span>
+                    <span>Ongata Rongai</span>
+                  </h4>
+                </div>
+                <div class="propertyReviewRow">
+                  <div class="propertyReviewContainer">
+                    <div class="rating">
+                      <span>
+                        <box-icon type="solid" color="green" name="star"></box-icon>
+                        <box-icon type="solid" color="green" name="star"></box-icon>
+                        <box-icon type="solid" color="green" name="star"></box-icon>
+                        <box-icon type="solid" color="green" name="star"></box-icon>
+                        <box-icon type="solid" color="green" name="star"></box-icon>
+                      </span>
+                      <span class="reviewRating">5.0</span>
+                    </div>
+                    <div class="costarVerifiedBox">
+                      <span>
+                        <box-icon type="solid" name="check-shield"></box-icon>
+                      </span>
+                      <span>
+                        <span class="verfiedText">Verified Listing</span>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column2">
+                <div class="userActions">
+                  <div class="shareBox">
+                    <box-icon name="share-alt" color="green" type="solid"></box-icon>
+                  </div>
+                  <div class="favoriteBox">
+                    <box-icon name="heart" color="green"></box-icon>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-tour">
+          <div class="form">
+            <h2>Contact this property</h2>
+            <div class="buttons">
+              <button class="tour">Request Tour</button>
+              <button class="msg">Send Message</button>
+            </div>
+            <div class="call">
+              <box-icon name="phone"></box-icon>
+              <p>0716055568</p>
+            </div>
+            <hr />
+            <div class="open-hours">
+              <box-icon type="solid" name="time"></box-icon>
+              <p style="font-size: small">Open 10am - 6pm Today</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

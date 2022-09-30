@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: lightgray;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+.form-container {
+  background-color: white;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+form button {
+  outline: none;
+  border: none;
+  border-radius: 100%;
+  padding: 5px;
+  background-color: #dbdada;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+form button:hover{
+    background-color: #efefef;
+}
+.add input {
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+}
+
+.results {
+  margin-top: 1.5em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #efefef;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 1rem;
+}
+
+.delete button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
